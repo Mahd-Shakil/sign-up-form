@@ -5,6 +5,16 @@
     font-style: normal;
 }
 
+.margin-right {
+    margin-right: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     max-height: 100vh;
@@ -17,7 +27,7 @@ body {
     background-image: url("assets/backsplash.jpg");
     background-size: cover;
     height: 100vh;
-    width: 30%;
+    width: 40%;
     padding-top: 185px;
 }
 
@@ -51,4 +61,114 @@ body {
     width: 30%;
     margin-bottom: 10px;
     text-align: center;
+}
+
+#about-service {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 30px;
+}
+
+#about-service p {
+    margin-left: 50px;
+    max-width: 800px;
+    font-weight: bold;
+}
+
+#about-service p:last_child {
+    margin-bottom: -60px;
+}
+
+fieldset {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 20px -20px;
+    color: #2b3542;
+    background-color: white;
+    height: 40vh;
+    padding-left: 50px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+
+.form-prompt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+form input {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 3px;
+}
+
+form input:focus {
+    outline-color: #7190e6;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 5px 6px;
+}
+
+form input[type="password"]:invalid {
+    border: 2px solid red;
+    outline-color: red;
+}
+
+form input::placeholder {
+    color: #ededee;
+}
+
+#create-account-container {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#submit-button {
+    background-color: #596D48;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    background-color: #6f865a;
+}
+
+small {
+    display: block;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+small a {
+    text-decoration: none;
+    color: #596d48;
 }
